@@ -1,0 +1,34 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# Visual Studio
+.vscode/
+.vs/
+*.sln.ide/
+*.user
+*.userosscache
+*.suo
+
+# Rider
+.idea/
+*.sln.iml
+
+# ReSharper
+_ReSharper*/
+*.DotSettings
+
+# ASP.NET
+appsettings*.json
+*.db
+*.pfx
+
+# Azure Functions
+local.settings.json
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
