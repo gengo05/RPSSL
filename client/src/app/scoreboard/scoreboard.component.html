@@ -1,0 +1,13 @@
+<div class="scoreboard-container">
+  <h2>Scoreboard</h2>
+  <button class="reset-button" (click)="resetScoreboard()">Reset Scoreboard</button>
+
+  <ul class="scoreboard-list">
+    <li *ngFor="let result of results">
+      <span class="player-move">{{result.player}} move: {{ result.playerMove }}</span><br>
+      <span class="opponent-move">Opponent move: {{ result.opponentMove }}</span><br>
+      <span class="game-outcome">Outcome: {{ result.result }}</span>
+    </li>
+  </ul>
+</div>
+

@@ -1,0 +1,52 @@
+.choices-container {
+  text-align: center;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.buttons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button img {
+  vertical-align: middle;
+}
+
+.random-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.random-button:hover {
+  background-color: #45a049;
+}
+
+.random-button:active {
+  background-color: #3e8e41;
+}

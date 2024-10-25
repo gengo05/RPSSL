@@ -1,0 +1,22 @@
+<div class="choices-container">
+  <h2>Choose your move:</h2>
+  <div class="buttons">
+    <div class="buttons">
+      <div class="buttons">
+        <button *ngFor="let choice of choices" (click)="playMove(choice.move)" class="icon-button">
+          <i [ngClass]="getIconClass(choice.name)"></i> {{ choice.name | titlecase }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="playRandomChoice()" class="random-button">Play Random Choice</button>
+
+
+  <div *ngIf="gameResult" class="result">
+    <h3>Game Result:</h3>
+    <p>Player Move: {{ gameResult.playerMove }}</p>
+    <p>Opponent Move: {{ gameResult.opponentMove }}</p>
+    <p>Result: {{ gameResult.result }}</p>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+
+<main class="main">
+  <div class="content">
+      <h1 class="title">Rock Paper Scissors Spock Lizard</h1>
+  </div>
+</main>
+
+<app-scoreboard></app-scoreboard>
+<hr class="rounded">
+
+
+<div *ngIf="!isAuthenticated()">
+  <p class="login-message">Please login to play the game</p>
+  <button class="login-button" (click)="openLoginDialog()">Login</button>
+</div>
+
+
+<div *ngIf="isAuthenticated()">
+  <button class="login-button" (click)="logOut()">Logout</button>
+  <app-game ></app-game>
+</div>
+
+<router-outlet />
